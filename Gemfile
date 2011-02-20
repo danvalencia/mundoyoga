@@ -27,6 +27,15 @@ gem 'ruby-debug'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
+
+group :test do
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+  gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'capybara'
+end
+
 # group :development, :test do
 #   gem 'webrat'
 # end
