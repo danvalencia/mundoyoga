@@ -28,12 +28,13 @@ gem 'ruby-debug'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 
-group :test do
+group :test, :development do
   gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'capybara'
+  gem "autotest"
 end
 
 # group :development, :test do
