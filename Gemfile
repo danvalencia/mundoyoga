@@ -11,6 +11,10 @@ gem 'devise'
 # Use unicorn as the web server
 gem 'unicorn'
 
+# For file uploading to Amazon S3
+gem 's3_swf_upload', :git => 'git://github.com/nathancolgate/s3-swf-upload-plugin'
+gem 'aws-s3', :require => 'aws/s3'
+
 # Deploy with Capistrano
 # gem 'capistrano'
 
@@ -31,10 +35,6 @@ gem 'ruby-debug'
 group :test, :development do
   gem 'database_cleaner'
   gem 'rspec-rails'
-  gem 'cucumber'
-  gem 'cucumber-rails'
-  gem 'capybara'
-  gem "autotest"
 end
 
 # group :development, :test do
