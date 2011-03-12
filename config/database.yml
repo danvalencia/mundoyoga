@@ -25,7 +25,7 @@ production:
   database: mundoyoga_prod
   username: mundoyogauser
   password: n4m4st3
-  socket: /tmp/mysql.sock
+  socket: /var/lib/mysql/mysql.sock
 
 cucumber:
   <<: *test
